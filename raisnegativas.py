@@ -34,8 +34,6 @@ options.add_experimental_option("prefs", {
 options.add_argument("--window-size=1920x1080")
 driver = webdriver.Chrome(chrome_options=options)
 
-
-
 driver.maximize_window()
 
 # esta funcao abre a pagina de login e receberá login e senha do csv para logar
