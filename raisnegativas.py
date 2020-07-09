@@ -19,7 +19,6 @@ from selenium.webdriver.common.by import By
 global str
 from selenium.webdriver.chrome.options import Options
 
-
 options = Options()
 options.add_experimental_option("prefs", {
 "download.default_directory": r"C:\Users\SEUCAMINHO\Desktop\Rais\Saida", #Definindo um diretorio padrão para fazer o download do pdf
