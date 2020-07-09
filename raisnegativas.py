@@ -60,7 +60,6 @@ def func_first_page(cnpj, razao, cnae, natureza_juridica, optante_simples, logra
         
         field_razao = driver.find_element_by_xpath('//*[@id="form:razaosocial"]')
         field_razao = field_razao.send_keys(razao)
-
        
         field_cnae = driver.find_element_by_xpath('//*[@id="form:selcnae"]')
         field_cnae = field_cnae.send_keys(cnae)
@@ -68,7 +67,6 @@ def func_first_page(cnpj, razao, cnae, natureza_juridica, optante_simples, logra
         field_natureza_juridica = driver.find_element_by_xpath('//*[@id="form:selcnatjur"]')
         field_natureza_juridica = field_natureza_juridica.send_keys(natureza_juridica)
 
-        
         porte_empresa = "micro" #Tamanho da empresa. obs: utilizar os tamanhos que aparecem como opção no site da Rais
         driver.find_element_by_xpath('//*[@id="form:porteEmpresa"]').send_keys(porte_empresa)
 
@@ -138,7 +136,6 @@ def func_first_page(cnpj, razao, cnae, natureza_juridica, optante_simples, logra
         time.sleep(0.5)
         field_responsavel = field_responsavel.send_keys(cpf_responsavel)
         
-        
         datanascimento_responsalvel = "19/03/2019"
 
         field_datanascimento= driver.find_element_by_xpath('//*[@id="form:dataNascimentoResponsavel"]')
@@ -172,7 +169,6 @@ def func_first_page(cnpj, razao, cnae, natureza_juridica, optante_simples, logra
     except:
         func_first_page(cnpj) 
  
-
         #Funções para pegar o CNPJ,RAZAO SOCIAL, CNAE, NATUREZA JURIDICA, OPTANTE PELO SIMPLES,LOGRADOURO,CEP E CIDADE de um arquivo em excel.
 def read_csv_cnpj():
     Cnpj = [] #criando a lista
